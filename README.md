@@ -16,7 +16,7 @@ This project focuses on predicting store-level sales at Walmart using time serie
 
 ## Dataset
 
-The dataset used in this project is from the [M5 Forecasting Accuracy competition on Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy). It contains sales data from Walmart across various departments and stores, as well as calendar and price data that influence demand. The goal is to predict sales for 28 days in the future at the store-item level.
+The dataset used in this project is from the [M5 Forecasting Accuracy competition on Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy). It contains sales data from Walmart across various departments and stores, as well as calendar and price data that influence demand. The goal is to predict sales for 31 days in the future at the store-item level.
 
 ## Models Analyzed
 
