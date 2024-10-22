@@ -53,23 +53,9 @@ Each model was carefully evaluated based on its Root Mean Square Error (RMSE), w
 1. Clone the repository:
     ```bash
     git clone https://github.com/jacobjk03/Data-Driven-Walmart-Sales-Predictions.git
-    cd Data-Driven-Walmart-Sales-Predictions
     ```
 
-2. Install required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Download the dataset from [Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy) and place it in the `data/` folder.
-
-4. Run the model training and evaluation:
-    ```bash
-    python train.py
-    ```
-
-## Project Structure
-Data-Driven-Walmart-Sales-Predictions/ │ ├── data/ # Directory for dataset ├── notebooks/ # Jupyter notebooks for exploratory analysis ├── models/ # Trained models ├── train.py # Main script for training models ├── requirements.txt # Python dependencies └── README.md # Project documentation
+2. Download the dataset from [Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy) and place it in the `data/` folder.
 
 
 ## Conclusion
