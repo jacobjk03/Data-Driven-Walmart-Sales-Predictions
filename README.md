@@ -11,7 +11,6 @@ This project focuses on predicting store-level sales at Walmart using time serie
 - [Results](#results)
 - [Technologies Used](#technologies-used)
 - [Installation and Setup](#installation-and-setup)
-- [Project Structure](#project-structure)
 - [Conclusion](#conclusion)
 - [Acknowledgments](#acknowledgments)
 
