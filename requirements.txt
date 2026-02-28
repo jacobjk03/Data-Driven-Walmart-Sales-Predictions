@@ -1,0 +1,19 @@
+# Web app
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# ML experiment tracking
+mlflow>=2.10.0
+
+# Data & modeling
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+statsmodels>=0.14.0
+
+# Optional: for notebook experiments
+jupyter>=1.0.0
+pmdarima>=2.0.0
+
+# Optional: for LSTM notebook only — requires Python 3.11 or 3.12 (not 3.13+)
+# tensorflow>=2.15.0
