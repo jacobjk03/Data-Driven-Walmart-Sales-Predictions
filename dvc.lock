@@ -1,0 +1,31 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py --store-id CA_1 --data-dir data --model-dir models --trend
+      add --seasonal add --seasonal-periods 7 --train-split 0.8
+    deps:
+    - path: data
+      hash: md5
+      md5: 9ee8f6ec9557b0cef6f130f5b0b70be3.dir
+      size: 450482528
+      nfiles: 6
+    - path: params.yaml
+      hash: md5
+      md5: 8f8d4a7bef201ae882cf3f71128e02ba
+      size: 244
+    params:
+      params.yaml:
+        train:
+          store_id: CA_1
+          data_dir: data
+          model_dir: models
+          trend: add
+          seasonal: add
+          seasonal_periods: 7
+          train_split: 0.8
+    outs:
+    - path: models
+      hash: md5
+      md5: 89c6c6e3952429e6ff165c1cc818ad07.dir
+      size: 144586
+      nfiles: 1
