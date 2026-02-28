@@ -1,12 +1,18 @@
 """FastAPI app to serve Exponential Smoothing forecasts."""
+import sys
 from pathlib import Path
 from typing import Optional
+
+# Allow running as script (e.g. python src/app.py or Code Runner)
+_root = Path(__file__).resolve().parent.parent
+if str(_root) not in sys.path:
+    sys.path.insert(0, str(_root))
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from .config import MODEL_DIR
-from .model import load_model, predict
+from src.config import MODEL_DIR
+from src.model import load_model, predict
 
 app = FastAPI(
     title="Walmart Sales Forecasting API",
@@ -69,3 +75,8 @@ def forecast(request: PredictRequest):
         steps=request.steps,
         forecast=pred.tolist(),
     )
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
