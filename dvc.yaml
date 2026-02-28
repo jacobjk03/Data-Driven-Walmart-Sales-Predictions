@@ -1,0 +1,14 @@
+# DVC pipeline: data (tracked separately) -> train -> models
+# Run: dvc repro
+# Data: track with  dvc add data/  and push/pull via DVC remote.
+
+stages:
+  train:
+    cmd: python train.py --store-id ${train.store_id} --data-dir ${train.data_dir} --model-dir ${train.model_dir} --trend ${train.trend} --seasonal ${train.seasonal} --seasonal-periods ${train.seasonal_periods} --train-split ${train.train_split}
+    deps:
+      - data
+      - params.yaml
+    params:
+      - train
+    outs:
+      - models

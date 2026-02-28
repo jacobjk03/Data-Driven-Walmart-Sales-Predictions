@@ -1,0 +1,11 @@
+# DVC / training parameters (used by dvc.yaml and train.py)
+# Override from CLI when running train.py directly.
+
+train:
+  store_id: CA_1
+  data_dir: data
+  model_dir: models
+  trend: add
+  seasonal: add
+  seasonal_periods: 7
+  train_split: 0.8
